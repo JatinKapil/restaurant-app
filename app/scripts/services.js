@@ -230,10 +230,8 @@ angular.module('confusionApp')
             return leadership;
         };
 
-        corpfac.getLeader = function() {
-            return leadership.filter(function(lead) {
-                return lead.designation === "Executive Chef";
-            })[0];
+        corpfac.getLeader = function(index) {
+            return leadership[index];
         };
 
         return corpfac;

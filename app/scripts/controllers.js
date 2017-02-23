@@ -99,7 +99,7 @@ angular.module('confusionApp')
     }])
     .controller('IndexController', ['$scope', '$stateParams', 'corporateFactory', 'menuFactory', function($scope, $stateParams, corporateFactory, menuFactory) {
 
-        var leader = corporateFactory.getLeader();
+        var leader = corporateFactory.getLeader(3);
         $scope.leader = leader;
         var promotion = menuFactory.getPromotion(0);
         $scope.promotion = promotion;
