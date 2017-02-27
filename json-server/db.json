@@ -38,6 +38,18 @@
           "comment": "It's your birthday, we're gonna party!",
           "author": "25 Cent",
           "date": "2011-12-02T17:57:28.556094Z"
+        },
+        {
+          "rating": 4,
+          "comment": "That's great",
+          "author": "Jatin",
+          "date": "2017-02-27T10:16:55.860Z"
+        },
+        {
+          "rating": 3,
+          "comment": "Awesome",
+          "author": "Paul",
+          "date": "2017-02-27T10:23:24.201Z"
         }
       ]
     },
@@ -209,7 +221,5 @@
       "description": "Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. He says, Put together the cuisines from the two craziest cultures, and you get a winning hit! Amma Mia!"
     }
   ],
-  "feedback": [
-
-  ]
+  "feedback": []
 }
