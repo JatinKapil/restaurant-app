@@ -124,8 +124,23 @@ angular.module('confusionApp')
 
         var leader = corporateFactory.getLeader(3);
         $scope.leader = leader;
-        var promotion = menuFactory.getPromotion(0);
-        $scope.promotion = promotion;
+
+        $scope.showPromo = false;
+        $scope.message = "Loading ...";
+        $scope.promotion = menuFactory.getPromotion().get({
+                id: 0
+            })
+            .$promise.then(
+                function(response) {
+                    $scope.promotion = response;
+                    $scope.showPromo = true;
+                },
+                function(response) {
+                    $scope.message = "Error: " + response.status + " " + response.statusText;
+                }
+            );
+
+
         $scope.showDish = false;
         $scope.message = "Loading ...";
         $scope.dish = menuFactory.getDishes().get({
